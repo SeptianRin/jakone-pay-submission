@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Stack(children: [
               //background color
               Container(
-                height: 1200,
+                height: 1100,
                 color: const Color.fromARGB(255, 239, 239, 239),
               ),
               //Header
@@ -245,7 +245,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   )),
               //Banner (scroll)
               Positioned(
-                  top: 430,
+                  top: 440,
                   left: 0,
                   right: 0,
                   child: LayoutBuilder(builder: (context, constraints) {
@@ -267,7 +267,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               //Destination
               Positioned(
-                top: 530,
+                top: 550,
                 left: -2,
                 right: 0,
                 child: Column(
