@@ -534,7 +534,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     const Row(
                       children: [
-                        SizedBox(width: 40),
+                        SizedBox(width: 20),
                         // Scrollable Banner Section
                         Expanded(
                           child: SingleChildScrollView(
