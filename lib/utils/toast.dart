@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Util {
+class Toast {
   void showToast(BuildContext context, String message) {
     // Find the overlay
     OverlayState? overlayState = Overlay.of(context);

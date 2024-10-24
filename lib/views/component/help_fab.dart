@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jakone_pay_submission/utils/utils.dart';
+import 'package:jakone_pay_submission/utils/toast.dart';
 
 class HelpFab extends StatelessWidget {
   const HelpFab({super.key});
@@ -11,7 +11,7 @@ class HelpFab extends StatelessWidget {
       height: 130,
       child: InkWell(
         onTap: () {
-          Util().showToast(context, "Floating Action Button is Clicked");
+          Toast().showToast(context, "Floating Action Button is Clicked");
         },
         child: const Padding(
           padding: EdgeInsets.all(8.0),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jakone_pay_submission/utils/utils.dart';
+import 'package:jakone_pay_submission/utils/toast.dart';
 import 'package:jakone_pay_submission/views/component/help_fab.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -165,8 +165,6 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: ElevatedButton(
                           onPressed: () {
-                            Util().showToast(
-                                context, "Background button clicked");
                             Navigator.pushNamed(context, '/homescreen');
                           },
                           style: ElevatedButton.styleFrom(
@@ -229,8 +227,6 @@ class LoginScreen extends StatelessWidget {
                           //elevated button
                           ElevatedButton(
                               onPressed: () {
-                                Util().showToast(
-                                    context, "Border button clicked");
                                 Navigator.pushNamed(context, '/homescreen');
                               },
                               style: ElevatedButton.styleFrom(

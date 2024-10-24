@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jakone_pay_submission/utils/toast.dart';
 
 class BottomNavbar extends StatelessWidget {
   const BottomNavbar({super.key});
@@ -11,30 +12,34 @@ class BottomNavbar extends StatelessWidget {
         topRight: Radius.circular(30.0),
       ),
       child: BottomAppBar(
-        height: 30,
+        height: 50,
         shape: const AutomaticNotchedShape(
           RoundedRectangleBorder(),
           StadiumBorder(),
         ),
         notchMargin: 8.0,
         child: Container(
-          height: 100,
+          height: 50,
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(
-                icon: const Icon(Icons.home, color: Colors.orange),
-                onPressed: () {
-                  // Action for home button
+              InkWell(
+                onTap: () {
+                  Toast().showToast(context, "Clicked Home");
                 },
+                child: const Image(
+                  image: AssetImage('images/ic_home.png'),
+                ),
               ),
               const SizedBox(width: 30),
-              IconButton(
-                icon: const Icon(Icons.person, color: Colors.orange),
-                onPressed: () {
-                  // Action for profile button
+              InkWell(
+                onTap: () {
+                  Toast().showToast(context, "Clicked Profile");
                 },
+                child: const Image(
+                  image: AssetImage('images/ic_user.png'),
+                ),
               ),
             ],
           ),
